@@ -5,7 +5,7 @@ const PricingCard = ({price, title}) => {
 
         <div className=' text-center bg-white  dark:bg-gray-800 rounded-lg p-6 '>
             <h1 className='text-2xl mt-3 md:text-3xl text-gray-900 dark:text-gray-100 font-bold '> {title} </h1>
-            <h3 className='text-gray-500 mb-6 mt-4 font-medium text-xl dark:text-gray-400 '>Monthly packagee</h3>
+            <h3 className='text-gray-500 mb-6 mt-4 font-medium text-xl dark:text-gray-400 '>Monthly package</h3>
             <p className='text-black font-bold text-2xl dark:text-white'> <span className='text-2xl md:text-5xl'> $ {price} </span> /month </p>
             <div className='text-gray-700 dark:text-gray-400 font-medium leading-10 mt-4 text-lg '>
                 <p>Unlimited updates & projects</p>

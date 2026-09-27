@@ -9,10 +9,10 @@ const Booking = () => {
              <Sectionheading   clr={"text-red-600"} heading={"Booking"} subheading={"Book service online"} />
            </div>
            <div  data-aos="fade-right" data-aos-delay="400" className='flex flex-col items-center justify-center'>
-             <p className='w-[50%] text-gray-900 dark:text-gray-300 text-center  '>
+             <p className='w-[90%] md:w-[70%] lg:w-[50%] text-gray-900 dark:text-gray-300 text-center  '>
                 The fastest way to talk to one of our Customer Service agents about your bookings. Yes any cancellation fees are determined by the property. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quis. Quasi natus dolorum illo quam voluptatem nostrum quod inventore excepturi!
             </p>
-            <div  data-aos="fade-down" data-aos-delay="600" className=' w-26 text-center p-2 rounded-lg py-2   mt-5 bg-pink-600 hover:bg-pink-800 mb-6'>
+            <div  data-aos="fade-down" data-aos-delay="600" className='cursor-pointer text-center px-8 py-3 rounded-lg mt-5 bg-pink-600 hover:bg-pink-800 transition-colors mb-6 text-white'>
                 <h1 className='font-bold whitespace-nowrap '>Book Now</h1>
             </div>
            </div>

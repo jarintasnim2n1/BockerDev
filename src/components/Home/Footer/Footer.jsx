@@ -12,28 +12,28 @@ import { FaRegCalendarAlt } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className='py-20 bg-blue-950 dark:bg-blue-800'> 
-    <div data-aos="fade-left" className='w-[80%] mx-auto sm:[60%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
-         <div className='flex flex-col items-start justify-center mx-auto' >
+    <div data-aos="fade-left" className='w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10'>
+         <div className='flex flex-col items-start justify-center' >
          <div className='flex items-center space-x-2 mb-5'>
-                  <div className='w-10 h-10 rounded-full bg-white hover:bg-gray-200 transition  flex flex-col items-center  justify-center  duration-200'>
+                  <div className='w-10 h-10 rounded-full bg-white hover:bg-gray-200 transition flex flex-col items-center justify-center duration-200'>
                     <SiWebex className='text-black h-7 w-7 ' />
                   </div>
-                  <h1 className='text-xl hidden sm:block md:text-3xl hover:text-4xl  bg-gradient-to-r from-amber-700 via-amber-500 to-amber-300 bg-clip-text text-transparent font-bold'>WebDev</h1>
+                  <h1 className='text-xl hidden sm:block md:text-3xl hover:text-4xl bg-gradient-to-r from-amber-700 via-amber-500 to-amber-300 bg-clip-text text-transparent font-bold'>WebDev</h1>
                 </div>
-               <div className='flex flex-col items-start leading-7  justify-center '>
-                <p className='font-bold text-gray-300'>Conditions Terms of Use Ours feturesin</p>
-                <p className='font-bold text-gray-300'>Services ew Guests LisitThe Team List</p>
-                <p className='font-bold text-gray-300'>Guests LisitThe Team List</p>
+               <div className='flex flex-col items-start leading-7 justify-center'>
+                <p className='font-medium text-gray-300'>Conditions & Terms of Use</p>
+                <p className='font-medium text-gray-300'>Our Features & Services</p>
+                <p className='font-medium text-gray-300'>Guest List & The Team</p>
                 </div> 
-            <div className='grid grid-cols-1 mt-6 gap-5 md:grid-cols-2 lg:grid-cols-3 '>
-            <div className='h-10 w-10 rounded-lg bg-gray-500 flex items-center justify-center group  hover:bg-blue-500'>
-              <TfiFacebook className='h-7 w-7  text-black  hover:text-white' />
+            <div className='grid grid-cols-3 mt-6 gap-5'>
+            <div className='h-10 w-10 rounded-lg bg-gray-500 flex items-center justify-center group cursor-pointer hover:bg-blue-500 transition-colors'>
+              <TfiFacebook className='h-6 w-6 text-black group-hover:text-white transition-colors' />
             </div>    
-            <div className='h-10 w-10 rounded-lg bg-gray-500 flex items-center justify-center group  hover:bg-blue-500'>
-             <IoLogoYoutube className='h-7 w-7  text-black  hover:text-white' />
+            <div className='h-10 w-10 rounded-lg bg-gray-500 flex items-center justify-center group cursor-pointer hover:bg-red-600 transition-colors'>
+             <IoLogoYoutube className='h-6 w-6 text-black group-hover:text-white transition-colors' />
             </div>    
-            <div className='h-10 w-10 rounded-lg bg-gray-500 flex items-center justify-center group  hover:bg-blue-500'>
-            <FaInstagram className='h-7 w-7  text-black  hover:text-white' />
+            <div className='h-10 w-10 rounded-lg bg-gray-500 flex items-center justify-center group cursor-pointer hover:bg-pink-600 transition-colors'>
+            <FaInstagram className='h-6 w-6 text-black group-hover:text-white transition-colors' />
             </div>    
             </div>    
      </div>

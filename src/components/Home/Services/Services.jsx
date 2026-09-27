@@ -5,7 +5,7 @@ import ServiceCard from './ServiceCard'
 
 const Services = () => {
   return (
-    <div className='py-30 bg-gray-300'>
+    <div id='services' className='py-30 bg-gray-300'>
         <div>
          <div>
             <Sectionheading clr="text-red-600" heading="Our Services" subheading=" Provided Features" />

@@ -4,35 +4,45 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div data-aos="fade-up" className='py-20 dark:bg-gray-950 '>
+    <div id='contact' data-aos="fade-up" className='py-20 dark:bg-gray-950 '>
         <Sectionheading clr={"text-green-700"} heading={"Our Contact Information"} subheading={"Join Our Workplaces Around The World"} />
      <div className='flex items-center justify-center mt-7'>
       <Image width={1000} height={800} alt="img" src="/images/map.png"/>
      </div>
-     <div >
+     <div className='w-[85%] md:w-[80%] mx-auto'>
         {/* form */}
-        <h1 className='font-bold flex items-start ml-40 mt-16 text-xl  md:text-3xl  dark:text-white'>Send Message</h1>
+        <h1 className='font-bold mt-16 text-2xl md:text-3xl dark:text-white'>Send Message</h1>
        
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center  w-[80%] mx-auto  mt-10'>
-        <div className='h-14 w-[70%] rounded-3xl bg-transparent border border-gray-300 p-2 '>
-            <h1 className='text-gray-600 font-medium ml-3 mt-1 '>Your email</h1>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center mt-8'>
+          <input 
+            type="email" 
+            placeholder="Your email" 
+            className='h-14 w-full rounded-3xl bg-transparent border border-gray-300 dark:border-gray-700 px-6 text-gray-700 dark:text-gray-200 focus:outline-none focus:border-pink-500 placeholder-gray-500'
+          />
+          <input 
+            type="tel" 
+            placeholder="Phone Number" 
+            className='h-14 w-full rounded-3xl bg-transparent border border-gray-300 dark:border-gray-700 px-6 text-gray-700 dark:text-gray-200 focus:outline-none focus:border-pink-500 placeholder-gray-500'
+          />
+          <input 
+            type="text" 
+            placeholder="Website" 
+            className='h-14 w-full rounded-3xl bg-transparent border border-gray-300 dark:border-gray-700 px-6 text-gray-700 dark:text-gray-200 focus:outline-none focus:border-pink-500 placeholder-gray-500'
+          />
         </div>
-        <div className='h-14 w-[70%] rounded-3xl bg-transparent border border-gray-300 p-2 '>
-            <h1 className='text-gray-600 font-medium ml-3 mt-1  '>Phone Number</h1>
+        <div className='mt-8'>
+          <textarea 
+            rows={6}
+            placeholder="Your Message Here..." 
+            className='w-full bg-transparent border-2 border-gray-300 dark:border-gray-700 rounded-2xl p-6 text-gray-700 dark:text-gray-200 focus:outline-none focus:border-pink-500 placeholder-gray-500 resize-none'
+          />
         </div>
-        <div className='h-14 w-[70%] rounded-3xl bg-transparent border border-gray-300 p-2 '>
-            <h1 className='text-gray-600 font-medium ml-3 mt-1  '>Website</h1>
+        <div className='mt-6 flex justify-center'>
+          <button type='button' className='h-14 px-10 bg-pink-600 hover:bg-pink-700 text-white font-semibold rounded-xl text-xl cursor-pointer transition duration-200 shadow-md hover:shadow-lg'>
+            Submit
+          </button>
         </div>
-       </div>
-      <div className='w-[90%] flex items-center justify-center'>
-         <div className='h-70 w-[90%] mx-auto bg-transparent border-2 border-gray-400 rounded-lg mt-10'>
-        <h1 className='text-gray-500 font-medium ml-5 mt-5 text-xl'> Your Message Here...</h1>
-       </div>
       </div>
-      <div className='h-14 w-26 bg-pink-700 hover:bg-pink-800  rounded-xl px-2 py-2 mx-auto  mt-5 flex items-center  justify-center'>
-        <h1 className='font-medium text-center text-xl transition duration-200 '>Submit</h1>
-      </div>
-       </div>
      </div>
     
   )

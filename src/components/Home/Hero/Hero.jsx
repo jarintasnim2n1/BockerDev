@@ -72,7 +72,7 @@ const Hero = () => {
       });
       
       // Continue animation loop
-      requestAnimationFrame(animate);
+      animationId = requestAnimationFrame(animate);
     };
     
     // Start animation
@@ -93,8 +93,8 @@ const Hero = () => {
     };
   }, []);
   return (
-    <div className='relative min-h-screen flex items-center justify-center overflow-hidden'>
-     <canvas ref={canvasRef} className='absolute inset-0 bg-linear-to-br from-blue-900 via-purple-900 to-pink-900 dark:from-gray-950 dark:via-gray-900 dark:to-gray-900' />
+    <div id='home' className='relative min-h-screen flex items-center justify-center overflow-hidden'>
+     <canvas ref={canvasRef} className='absolute inset-0 bg-gradient-to-br from-blue-900 via-purple-900 to-pink-900 dark:from-gray-950 dark:via-gray-900 dark:to-gray-900' />
      <div className='relative max-w-7xl px-4 sm:px-6 lg:px-8 text-center mx-auto z-10 '>
        <div >
         <div data-aos="fade-down" className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md rounded-full px-8 py-4 mb-8 ">
@@ -113,8 +113,8 @@ const Hero = () => {
        </h1>
        <p data-aos="fade-up" data-aos-delay="400" className="text-xl md:text-2xl lg:text-3xl text-white max-w-4xl leading-relaxed"> When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetroble. </p>
     <div data-aos="fade-up" data-aos-delay="600" className="flex flex-col sm:flex-row gap-4 justify-center">
-      <Link href={"#"} className=" mt-6 group inline-flex justify-center space-x-2 items-center text-black  bg-white transform hover:bg-blue-600 hover:scale-105 py-4 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-2xl">
-      <span className="mr-2 sm:mr-1 font-medium text-lg md:text-xl ">Get Started </span> < FaArrowRightLong className="h-5 w-5 group-hover:tranlate-x-1 transition-transform"/>
+      <Link href={"#"} className=" mt-6 group inline-flex justify-center space-x-2 items-center text-black  bg-white transform hover:bg-blue-600 hover:text-white hover:scale-105 py-4 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-2xl">
+      <span className="mr-2 sm:mr-1 font-medium text-lg md:text-xl ">Get Started </span> < FaArrowRightLong className="h-5 w-5 group-hover:translate-x-1 transition-transform"/>
       </Link> 
       <Link href={"#"} className=" mt-6  inline-flex justify-center items-center  text-white hover:text-black bg-transparent border-2 border-white hover:bg-white transform hover:scale-105 py-4 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-2xl">
       <span className=" font-medium text-lg md:text-xl ">Contact Us </span> 
